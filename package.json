@@ -1,0 +1,24 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "CLI based basic weather app made using Nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MEGA-BLASTER2004/cli-weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MEGA-BLASTER2004/cli-weather-app/issues"
+  },
+  "homepage": "https://github.com/MEGA-BLASTER2004/cli-weather-app#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "request": "^2.88.2",
+    "requests": "^0.3.0"
+  }
+}
