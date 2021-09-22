@@ -1,8 +1,16 @@
 const API = require('./secret.js')
 const request = require('request')
 const chalk = require('chalk')
+const yargs = require('yargs')
 
-const location = "Bengaluru"
+location = ""
+
+if(yargs.argv["loc"]){
+    location = yargs.argv["loc"]
+}else{
+    location = ""
+}
+
 const weather_URL = "http://api.weatherstack.com/current?access_key=" + API.weather + "&query=" + location
 
 request({url: weather_URL, json: true}, (error, response) => {
